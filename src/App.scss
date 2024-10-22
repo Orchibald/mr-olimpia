@@ -1,0 +1,11 @@
+@import "./helpers/global.scss";
+
+body {
+  font-family: "Yeseva One", serif;
+  background-color: $gray-primary;
+}
+
+.main {
+  padding-top: $header-height;
+  min-height: $main-height;
+}

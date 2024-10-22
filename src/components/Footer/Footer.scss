@@ -1,0 +1,94 @@
+@import "../../helpers/utils";
+
+.footer {
+  height: $footer-height;
+  box-shadow: 0px -3px 20px 0px hsl(0, 0%, 13%);
+
+
+  &__image {
+    width: 100%;
+    height: auto;
+    max-height: 54px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include on-mobile {
+    padding-top: 16px;
+    box-shadow: -7px -20px 20px 0px hsl(0, 0%, 13%);;
+  }
+
+  &__content {
+    padding-top: calc($footer-height / 4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include on-mobile {
+      flex-direction: column;
+      gap: 32px;
+      align-items: start;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+
+    @include on-mobile {
+      flex-direction: column;
+      gap: 16px;
+      align-items: start;
+    }
+  }
+
+  &__link {
+    @extend %uppercase;
+
+    color: $gray-secondary;
+
+    @include hover(color, $gray-elements);
+  }
+
+  &__anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    &-text {
+      @extend %small-text;
+      
+      color: $gray-secondary;
+
+      transition: color $transition-duration;
+    }
+
+    & button {
+      order: 1;
+      height: 32px;
+      width: 32px;
+      padding: 0;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      background-color: transparent;
+      border: 1px solid $gray-secondary;
+      cursor: pointer;
+
+      @include hover(border-color, $gray-elements);
+
+      &:hover ~ .footer__anchor-text {
+        color: $gray-elements;
+      }
+    }
+  }
+}

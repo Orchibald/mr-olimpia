@@ -1,0 +1,57 @@
+@import '../../helpers/utils.scss';
+
+.subscription {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 20px 0px $black-border;
+  border-radius: 10px;
+  padding: 20px 15px;
+  background-color: $gray-primary;
+
+  @include on-mobile {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $red-primary;
+    font-family: 'Press Start 2P', sans-serif;
+  }
+
+  &__price {
+    margin: 5px 0;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+
+    @include on-mobile {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    color: blue;
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $red-primary;
+    }
+  }
+}

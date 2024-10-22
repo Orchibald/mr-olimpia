@@ -1,0 +1,74 @@
+@import '../../helpers/utils';
+
+
+.home {
+  background-size: cover;
+  padding: 40px;
+  color: white;
+  text-align: center;
+
+  &__header h1 {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 3rem;
+    color: $red-primary;
+    text-shadow: black -4px 4px 0px;  
+
+    @include on-mobile {
+      font-size: 2rem;
+    }
+  }
+  
+  &__header p {
+    font-family: "Great Vibes", serif;
+    font-size: 2rem;
+  }
+
+  &__features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+    @include on-tablet() {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__feature {
+    border: 1px $black-border solid;
+    border-radius: 10px;
+    padding: 12px;
+    width: 20%;
+    text-align: left;
+    box-shadow: 0px 3px 20px 0px $black-border;
+    transition: transform .3s ease;
+
+    @include on-tablet() {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    & h3 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  }
+
+  &__feature-icon {
+    font-size: 2rem;
+  }
+
+  
+  &__actions {
+    margin-top: 50px;
+
+    @include on-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

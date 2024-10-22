@@ -1,0 +1,26 @@
+@import '../../helpers/utils.scss';
+
+.telegram-link {
+  position: fixed;
+  bottom: $footer-height + 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #0088cc;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0px 1px 20px 6px hsl(0, 0%, 13%);
+  transition: background-color .3s ease ;
+  transition: transform .3s ease ;
+  z-index: 2;
+
+  &:hover {
+    background-color: #005f8d;
+    transform: scale(1.1);
+  }
+}

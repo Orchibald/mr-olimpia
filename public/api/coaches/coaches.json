@@ -1,0 +1,57 @@
+[
+  {
+    "name": "ДЖЕЙСОН СТЕЙТЕМ",
+    "specialization": "Тренер з функціональних тренувань",
+    "facts": [
+      "Професійний актор та спортсмен",
+      "Сертифікований тренер з бойових мистецтв та функціональних тренувань",
+      "Учасник міжнародних змагань з плавання та стрибків у воду"
+    ],
+    "imageSrc": "/images/coaches/jason-statham.jfif",
+    "instagramLink": "https://www.instagram.com/jasonstatham/"
+  },
+  {
+    "name": "ДУЕЙН ДЖОНСОН",
+    "specialization": "Тренер з важкої атлетики та мотивації",
+    "facts": [
+      "Колишній професійний рестлер та кіноактор",
+      "Розробник власної програми тренувань для м'язової маси",
+      "Власник бренду спортивного харчування"
+    ],
+    "imageSrc": "/images/coaches/dwayne-johnson.jpg",
+    "instagramLink": "https://www.instagram.com/therock/"
+  },
+  {
+    "name": "КРІС ГЕМСВОРТ",
+    "specialization": "Тренер з кросфіту та кардіо",
+    "facts": [
+      "Сертифікований інструктор з фітнесу",
+      "Зірка фільмів про супергероїв Marvel",
+      "Учасник світових фітнес-заходів"
+    ],
+    "imageSrc": "/images/coaches/chris-hemsworth.jpg",
+    "instagramLink": "https://www.instagram.com/chrishemsworth/"
+  },
+  {
+    "name": "ГАЛ ГАДОТ",
+    "specialization": "Фітнес-тренер та інструктор з йоги",
+    "facts": [
+      "Колишня міс Ізраїль і акторка",
+      "Сертифікований тренер з йоги та пілатесу",
+      "Учасниця фітнес-фестивалів по всьому світу"
+    ],
+    "imageSrc": "/images/coaches/gal-gadot.jpg",
+    "instagramLink": "https://www.instagram.com/gal_gadot/"
+  },
+  {
+    "name": "ГЕНРІ КАВІЛЛ",
+    "specialization": "Тренер з бодібілдингу",
+    "facts": [
+      "Актор, відомий за роль Супермена",
+      "Прихильник строгих режимів харчування та тренувань",
+      "Сертифікований інструктор з бодібілдингу"
+    ],
+    "imageSrc": "/images/coaches/henry-cavill.jfif",
+    "instagramLink": "https://www.instagram.com/henrycavill/"
+  }
+]

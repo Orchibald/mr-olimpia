@@ -1,0 +1,31 @@
+{
+  "subscriptions": [
+    {
+      "name": "Ранковий",
+      "time": "8 - 14",
+      "price": {
+        "regular": 300,
+        "student": 250,
+        "youth": 200
+      }
+    },
+    {
+      "name": "Вечірній",
+      "time": "14 - 20",
+      "price": {
+        "regular": 400,
+        "student": 350,
+        "youth": 300
+      }
+    },
+    {
+      "name": "Безлім",
+      "time": "8 - 20",
+      "price": {
+        "regular": 600,
+        "student": 500,
+        "youth": 450
+      }
+    }
+  ]
+}

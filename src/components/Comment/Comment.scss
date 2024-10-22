@@ -1,0 +1,35 @@
+@import '../../helpers/utils.scss';
+
+.comment-card {
+  background-color: $gray-primary;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 8px 7px rgb(0 0 0 / 10%);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__nickname {
+    font-size: 18px;
+    color: $c-red;
+  }
+
+  &__likes {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 20px;
+      margin-right: 5px;
+      transition: color 0.2s ease;
+    }
+  }
+
+  &__footer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

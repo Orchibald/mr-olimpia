@@ -1,0 +1,148 @@
+@import "../../helpers/utils";
+
+.header {
+  position: fixed;
+  height: $header-height;
+  width: 100%;
+  padding: 10px 24px;
+  background-color: $gray-primary;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 20px 0px hsla(0, 0%, 13%, 1);
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    color: $red-primary;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $red-primary;
+    height: 100%;
+    transition: color 0.3s ease;
+    font-family: 'Press Start 2P', sans-serif;
+    text-shadow: black -2px 2px 0px;
+
+    @extend %uppercase;
+
+    &:hover {
+      color: $red-secondary;
+    }
+
+    &:hover .header__image {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    max-height: $header-height - 10px;
+    transition: transform 0.3s ease;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include on-tablet {
+      display: none; 
+      background-color: $gray-primary;
+      width: 100%;
+      color: $gray-secondary;
+      position: absolute;
+      top: $header-height;
+      left: 0;
+    }
+
+    @include on-mobile {
+      flex-direction: column;
+    }
+
+    &--open {
+      @include on-tablet {
+        display: flex; 
+      }
+    }
+
+    .header__link {
+      position: relative;
+      color: $gray-secondary;
+      text-decoration: none;
+      height: $header-height;
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+
+      @extend %uppercase;
+
+      &:hover {
+        background-color: $gray-hover;
+      }
+
+      @include on-mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &__burger {
+    display: none; 
+  
+    @include on-tablet {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 10;
+      background-color: $red-primary;
+      border-radius: 50%;
+    }
+  
+    .burger-line {
+      @include burger-line;
+      top: 50%;
+      transform: translateY(-50%);
+      
+      &:nth-child(1) {
+        transform: translateY(calc(-50% - 10px));
+      }
+      
+      &:nth-child(2) {
+        transform: translateY(-50%); 
+      }
+      
+      &:nth-child(3) {
+        transform: translateY(calc(-50% + 10px)); 
+      }
+    }
+  
+    &--active {
+      .burger-line:nth-child(1) {
+        transform: translateY(0px) rotate(45deg);
+      }
+      .burger-line:nth-child(2) {
+        opacity: 0;
+      }
+      .burger-line:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.active {
+  background-color: $gray-hover;
+}
