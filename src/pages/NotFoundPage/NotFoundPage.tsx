@@ -4,11 +4,11 @@ import './NotFoundPage.scss';
 export const NotFoundPage: React.FC = () => {
   return (
     <div className="container notFoundPage">
-      <h1>Unfortunately, we did not find such a page on our site.</h1>
+      <h1>На жаль, ми не знайшли такої сторінки на нашому сайті.</h1>
       <p>
-        You can go to the&nbsp;
+        Ви можете перейти на&nbsp;
         <Link to="/">
-          home page
+          головну сторінку
         </Link>
         .
       </p>
