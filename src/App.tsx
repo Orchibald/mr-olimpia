@@ -4,6 +4,7 @@ import { Footer } from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import { TelegramLink } from './components/TelegramLink/TelegramLink'
 import { ToastContainer } from 'react-toastify'
+import CalorieCalculatorLink from './components/CalorieCalculatorLink/CalorieCalculatorLink'
 
 export const App: React.FC = () => {
 
@@ -13,6 +14,7 @@ export const App: React.FC = () => {
       <main className=' main container'>
         <Outlet />
         <TelegramLink />
+        <CalorieCalculatorLink />
       </main>
       <Footer />
       <ToastContainer
