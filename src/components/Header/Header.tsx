@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           Тренери
         </Link>
         <Link to="/subscriptions" className={location.pathname === "/subscriptions" ? "active header__link" : "header__link"}>
-          Абонименти
+          Абонементи
         </Link>
         <Link to="/comments" className={location.pathname === "/comments" ? "active header__link" : "header__link"}>
           Коментарі

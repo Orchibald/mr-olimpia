@@ -11,7 +11,7 @@ export const App: React.FC = () => {
   return (
     <>
       <Header />
-      <main className=' main container'>
+      <main className='main container'>
         <Outlet />
         <TelegramLink />
         <CalorieCalculatorLink />
