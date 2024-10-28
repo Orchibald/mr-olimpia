@@ -25,7 +25,7 @@ export const Footer = () => {
 
           <li className="footer__item">
             <a
-              href="www.linkedin.com/in/orestkozak2003"
+              href="https://linkedin.com/in/orestkozak2003"
               className="footer__link"
               rel="noreferrer"
               target="_blank"
